@@ -1,10 +1,7 @@
-//your JS code here. If required.
+let inputField = document.getElementById('fname');
 
-//we got the input in the inputField
-let inputField=document.getElementById('fname');
-
-// Add an event listener for the 'input' event
-inputField.addEventListener('input', function (event) {
+// Add an event listener for the 'blur' event
+inputField.addEventListener('blur', function (event) {
     // Get the current value of the input field
     const inputValue = event.target.value;
 
@@ -14,5 +11,3 @@ inputField.addEventListener('input', function (event) {
     // Update the input field with the uppercase value
     event.target.value = uppercaseValue;
 });
-
-//we update the eisitng string to uppercase
